@@ -1,0 +1,357 @@
+#mensaje_perder{
+    color: rgb(214, 71, 71);
+    margin-top: 20px;
+    text-align: center;
+}
+.sala-espera {
+    background-color: #282c34;
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.aviso-perder{
+    visibility: hidden;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    opacity: 0;
+
+    animation: fadeIn 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+    background-color: rgb(228, 228, 228) ;
+    margin-top: -100px; 
+    margin-left: -200px; 
+    z-index: 1;
+}
+
+.aviso-repetida{    
+    visibility: hidden;
+    position: fixed;
+    top: 80%; 
+    left: 50%;
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+
+    background-color: rgb(255, 117, 117) ;
+    opacity: 0.9;
+    color: white; 
+    text-align: center;
+    margin-top: -100px; 
+    margin-left: -200px; 
+    z-index: 1;
+}
+
+.bomba{
+    height: 50x;
+    width: 50px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    color: white;   
+}
+
+.bomba-yo{
+    height: 80x;
+    width: 80px;
+    position: relative;
+    text-align: center;
+    color: white;   
+}
+
+
+.bomba-text {
+    position: absolute;
+    top: 52%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.bomba-text-yo {
+    position: absolute;
+    top: 52%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+.boton-reintentar{
+    height: 20%;
+    width: 20%;
+}
+
+
+.boton-si{
+    background-color: #30753b;
+    border-radius: 5px;
+    border-color: #1b4221;
+    color: #f0f0f0;
+}
+
+.boton-si:disabled{
+    background-color: #67696e;
+    color: rgb(133, 133, 133);
+}
+
+.boton-no{
+    background-color:  #753030;
+    border-radius: 5px;
+    border-color:  #361717;
+    color: #f0f0f0;
+}   
+
+.boton-no:disabled{
+    background-color: #67696e;
+    color: rgb(133, 133, 133);
+}
+
+.boton-enviar{
+    background-image: url('./assets/Send-01.svg');
+    height: 40;
+    width: 40;
+}
+.body-wrap{
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.categoria-container{
+    background-color: #1d4147;
+    
+}
+
+.frame-juego{
+    background-color: #27282c;
+    width: 100%;
+    height: 100%;
+}   
+
+.frame-espera{
+    background-color: #282c34;
+    width: 100%;
+    height: 100%;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+
+.icono-jugador{
+    color: #5e6164;
+    top: 10
+} 
+
+.palabra-principal{
+    color: #ffcd00;
+}
+
+
+/*Jugador*/
+
+@media (min-width: 992px) {
+    .placeholder-jugador{
+        width: 200px;
+        height: 200px;
+        
+        position: relative;
+    }
+
+    .nombre-jugador{
+        font-size: 2rem;
+    }
+}
+    
+
+
+@media (max-width: 992px) {
+    .placeholder-jugador{
+        width: 120px;
+        height: 120px;
+        
+        position: relative;
+    }
+    .nombre-jugador{
+        font-size: 20px;
+    }
+}
+
+
+.timer{
+    height: 10vh;
+    margin-bottom: 25px;
+    color: white; 
+}
+
+
+
+.text-box{
+    height:50px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(93, 93, 187); /*TODO: CAMBIAR EL COLOR*/
+    background-color: #40454b;
+    color: rgb(224, 224, 224);
+}
+
+.text-box:disabled{
+    border: 1px solid transparent;
+    background-color: #40454b;
+    
+}
+
+.texto-como-jugar{
+    color: #dadada;
+    align-self: start;
+}
+.texto-descripcion{
+    font-size: 20px;
+    color: lightcyan;
+    align-self: start;
+}
+
+.texto-categoria{
+    font-weight: 300;
+    color: white;
+    color: '#FAFAFA';
+}
+
+.text-lider{
+    color:rgb(182, 182, 182);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.text-esperando{
+    color: rgb(158, 158, 158);
+}
+.text-box:focus{
+    outline: none;
+}
+
+.tool-tip{
+    border-radius: 5px;
+    margin-top:-50px;
+    visibility: hidden;
+    font-size: 20px;
+    background-color: #fafafa ;
+    opacity: 0.7;
+
+    width: 80%;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50%;
+
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    
+}
+
+
+
+.tool-tip::after {
+    content: " ";
+    position:  absolute;
+    top: 100%;
+    left: 50%;
+    
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fafafa transparent transparent transparent;
+  }
+
+
+
+.stretch{
+    height: 100%;
+}
+
+
+@keyframes blink {
+    /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+    0% {
+      opacity: .2;
+    }
+    /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+    20% {
+      opacity: 1;
+    }
+    /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+    100% {
+      opacity: .2;
+    }
+}
+
+.saving span {
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn{
+    color: black !important;
+}

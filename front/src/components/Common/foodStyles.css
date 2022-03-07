@@ -1,0 +1,41 @@
+a {
+    color: black;
+}
+h3 {
+    color: white;
+}
+body {
+    background-color: #37393f;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.blanquito {
+    color: white;
+    border-color: white;
+    border-top: 20px;
+    margin-top: 15px;
+}
+.col {
+    margin-top: 20px;
+}
+#MyRow {
+    margin-right: 0px;
+    margin-left: 0px;
+}

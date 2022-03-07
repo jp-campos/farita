@@ -1,0 +1,13 @@
+{
+  "name": "entrega5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "heroku-postbuild": "npm install"
+  },
+  "author": "Equipo 5",
+  "license": "MIT"
+}

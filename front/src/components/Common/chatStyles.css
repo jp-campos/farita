@@ -1,0 +1,70 @@
+.body-chat{
+    background-color: #363940;
+    min-height: 100%; 
+    width: 350px; 
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.fondo-chat{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.boton-enviar{
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: -55px;
+    height: 35px;
+    width: 35px;
+    margin-top:3px;
+
+}
+.input-chat{
+    background-color: #2a2b2f;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: transparent;
+    width: 90%; 
+    height: 40px; 
+    outline: none;
+    color: rgb(250, 250, 250);
+    padding-left: 10px;
+    padding-right: 55px;
+}
+  
+.input-chat:focus{
+    border-color: rgb(92, 92, 92);
+    border-style: solid;
+}
+
+.text-hora{
+  font-size:12px;
+  color:#a3a9b3;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  #363940; 
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,0 +1,148 @@
+@keyframes pulse {
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+
+
+.boton-jugador {
+  background-image: url(./assets/enano.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+}
+
+.sala-espera {
+    display: flex;  
+    background-color: #282c34;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.contener{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-top: 30px;
+}
+
+.forma {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.circle-container {
+  position: relative;
+  width: 18em;
+  height: 18em;
+  padding: 2.8em;
+  /*2.8em = 2em*1.4 (2em = mitad anchura del link con img, 1.4 = raíz cuadrada(2))*/
+  border: dashed 1px;
+  border-radius: 50%;
+  margin: 2em auto 0;
+}
+.arg2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-container div {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.4em;
+  height: 4.4em;
+  margin: -2em;
+}
+
+#j0 {
+  transform: translate(9.5em) rotate(-90deg);
+}
+#j01 {
+  transform: rotate(-12deg) translate(10.2em) rotate(90deg) ;
+}
+#j02 {
+  transform: rotate(16deg) translate(10.1em) rotate(-90deg);
+}
+
+#j1 {
+  transform: rotate(45deg) translate(10em) rotate(-90deg);
+}
+#j11 {
+  transform: rotate(31deg) translate(10.8em) rotate(-90deg);
+}
+#j12 {
+  transform: rotate(59deg) translate(10.2em) rotate(-90deg);
+}
+
+#j2 {
+  transform: rotate(90deg) translate(9.5em) rotate(-90deg);
+}
+#j21 {
+  transform: rotate(71deg) translate(10.2em) rotate(-85deg);
+}
+#j22 {
+  transform: rotate(102deg) translate(9.6em) rotate(-85deg);
+}
+
+#j3 {
+  transform: rotate(135deg) translate(9em) rotate(-90deg);
+}
+#j31 {
+  transform: rotate(115deg) translate(9em) rotate(-75deg);
+}
+#j32 {
+  transform: rotate(146deg) translate(8.7em) rotate(-90deg);
+}
+
+#j4 {
+  transform: translate(-8.5em) rotate(90deg);
+}
+#j41 {
+  transform: rotate(160deg) translate(7.8em) rotate(98deg);
+}
+#j42 {
+  transform: rotate(195deg) translate(7.8em);
+}
+
+#j5 {
+  transform: rotate(225deg) translate(8.5em) rotate(-90deg);
+}
+#j51 {
+  transform: rotate(210deg) translate(7.2em) rotate(-91deg);
+}
+#j52 {
+  transform: rotate(241deg) translate(7.75em) rotate(-97deg);
+}
+
+#j6 {
+  transform: rotate(270deg) translate(8.5em) rotate(-90deg);
+}
+#j61 {
+  transform: rotate(260deg) translate(7.7em) rotate(-99deg);
+}
+#j62 {
+  transform: rotate(288deg) translate(8.3em) rotate(-100deg);
+}
+
+#j7 {
+  transform: rotate(315deg) translate(9em) rotate(-90deg);
+}
+#j71 {
+  transform: rotate(-55deg) translate(8.9em) rotate(-100deg);
+}
+#j72 {
+  transform: rotate(-27deg) translate(9.3em) rotate(-100deg);
+}

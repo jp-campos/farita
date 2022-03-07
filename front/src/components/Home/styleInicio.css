@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.main
+{     
+    background-color:#282c34;
+    
+}
+
+.create-farita, .join-farita 
+{
+    font-size: 2rem;
+    color: #fff !important;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 40px;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem #E8A896, 0 0 4rem  #E8A896, 0 0 6rem #E8A896, 0 0 8rem  #E8A896, 0 0 10rem  #E8A896;
+    box-shadow: 0 0 0.5rem #fff, 0 0 0.5rem #fff, insert 0 0 2rem #08f, insert 0 0 2rem #08f, 0 0 4rem #08f, insert 0 0 4rem #08f;
+}
+.MuiTypography-h1{
+    color: #fff;
+}
+.container 
+{
+    display: block;
+    font-family: "Poppins", sans-serif;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0); 
+    margin-bottom: 60px;  
+}
+a{
+    color: #fff;
+}
+
+.image {
+    margin: auto;
+    width: 400px;
+    vertical-align: middle;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    max-width: 850px;
+    text-align: center;
+
+}
+.create
+ {
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+#c2{
+    margin-bottom: 80px;
+}
+
+
